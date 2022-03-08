@@ -16,7 +16,7 @@ class workOnDatabase:
             # read connection parameters
             params = config()
             # connect to the PostgreSQL server
-            logging.info('Connecting to the PostgreSQL database...')
+            logging.info('Connecting to the PostgreSQL databases...')
             conn = psycopg2.connect(**params)
             return conn
         except (Exception, psycopg2.DatabaseError) as error:
